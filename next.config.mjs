@@ -5,7 +5,7 @@ const withPWA = WithPWA({
   register: true,
   skipWaiting: true,
   // Disables PWA support for non-production environment
-  disable: process.env.NODE_ENV !== "production",
+  // disable: process.env.NODE_ENV !== "production",
 });
 
 /*
