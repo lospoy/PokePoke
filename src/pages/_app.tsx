@@ -23,7 +23,7 @@ const MyApp: AppType = ({ Component, pageProps }) => {
           <meta name="keywords" content="Keywords" />
           <title>PokePoke PWA</title>
 
-          <link rel="manifest" href="/manifest.json" />
+          <link rel="manifest" href="/public/manifest.json" />
           <link href="/brain64.png" rel="icon" type="image/png" sizes="64x64" />
           <meta name="theme-color" content="#eb5683" />
         </Head>
