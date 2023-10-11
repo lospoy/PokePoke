@@ -4,7 +4,7 @@
   "start_url": ".",
   "display": "fullscreen",
   "orientation": "portrait",
-  "background_color": "#fffff",
+  "background_color": "#fff",
   "theme_color": "#eb5683",
   "description": "An intent setting and tracking app",
   "icons": [
