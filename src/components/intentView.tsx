@@ -20,9 +20,9 @@ import { Input } from "~/components/ui/input";
 import { Label } from "~/components/ui/label";
 import { Card } from "./ui/card";
 
-type IntentWithCreator = RouterOutputs["intents"]["getIntentsByUserId"][number];
+type IntentWithUser = RouterOutputs["intents"]["getAll"][number];
 
-export const IntentView = (props: IntentWithCreator) => {
+export const IntentView = (props: IntentWithUser) => {
   const { intent } = props;
   const { mutateAsync } = api.intents.softDelete.useMutation();
 
@@ -97,12 +97,17 @@ export const IntentView = (props: IntentWithCreator) => {
               </div>
               <div className="mb-3 space-y-1">
                 <Label htmlFor="dates">Dates</Label>
-                <Input id="dates" autoFocus={false} defaultValue={dates} />
+                <Input
+                  id="dates"
+                  type="date"
+                  autoFocus={false}
+                  defaultValue={dates}
+                />
               </div>
               {intent.notes && (
                 <div className="mb-3 space-y-1">
-                  <Label htmlFor="Notes">Notes</Label>
-                  <Input id="Notes" defaultValue={intent.notes} />
+                  <Label htmlFor="dates">Notes</Label>
+                  <Input id="dates" defaultValue={intent.notes} />
                 </div>
               )}
             </div>

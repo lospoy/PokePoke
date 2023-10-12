@@ -7,7 +7,6 @@ interface UserState {
   firstName?: string;
   imageUrl?: string;
   email?: string;
-  id?: string;
 }
 
 const initialState: UserState = {};

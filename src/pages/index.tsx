@@ -24,7 +24,6 @@ const Home: NextPage = () => {
         firstName: user.firstName ?? "",
         imageUrl: user.imageUrl ?? "",
         email: user.primaryEmailAddress?.emailAddress ?? "",
-        id: user.id ?? "",
       };
       dispatch(setUser(userData));
     }
@@ -55,13 +54,7 @@ const Home: NextPage = () => {
             </div>
           )}
         </div>
-
-        {user && (
-          <div>
-            <span>{user?.id}</span>
-            <IntentFeed userId={user?.id} />
-          </div>
-        )}
+        <IntentFeed />
         <Button
           onClick={handleNewIntentClick}
           className="fixed bottom-2 right-2 z-50 m-4 flex h-20 self-end rounded-full border-4 bg-current p-4 text-white shadow-lg "

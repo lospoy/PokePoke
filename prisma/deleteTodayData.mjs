@@ -31,4 +31,4 @@ async function clearDataSavedToday() {
   }
 }
 
-await clearDataSavedToday();
+clearDataSavedToday();
