@@ -50,7 +50,10 @@
     "svix": "^1.13.0",
     "tailwind-merge": "^1.14.0",
     "tailwindcss-animate": "^1.0.7",
-    "zod": "^3.22.2"
+    "zod": "^3.22.2",
+    "@trigger.dev/sdk": "^2.2.5",
+    "@trigger.dev/nextjs": "^2.2.5",
+    "@trigger.dev/react": "^2.2.5"
   },
   "devDependencies": {
     "@types/eslint": "^8.44.2",
@@ -72,5 +75,8 @@
   },
   "ct3aMetadata": {
     "initVersion": "7.19.0"
+  },
+  "trigger.dev": {
+    "endpointId": "pokepoke-k3EO"
   }
 }
